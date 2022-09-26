@@ -1,14 +1,9 @@
 N = int(input())
-yes, no = 0,0
+result = []
 for i in range(N):
-    result = int(input())
-    if result == 1:
-        yes += 1
-    else :
-        no+=1
+    result.append(int(input()))
 
-
-if yes > no :
+if result.count(1) > result.count(0):
     print("Junhee is cute!")
-else: 
+else :
     print("Junhee is not cute!")
